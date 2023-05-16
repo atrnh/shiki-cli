@@ -59,11 +59,10 @@ async function main() {
     .name("shiki-cli")
     .description("A CLI for Shiki")
     .version("0.0.1")
-    .option("-i", "--input [file]", "File to highlight or read from stdin")
-    .option("-t", "--theme [theme]", "Theme to use for highlighting", "nord")
+    .option("-i, --input <file>", "File to highlight or read from stdin")
+    .option("-t, --theme <theme>", "Theme to use for highlighting", "nord")
     .option(
-      "-o",
-      "--output [outfile]",
+      "-o, --output <outfile>",
       "Path of output file (will output to stdout by default)"
     )
     .requiredOption(
